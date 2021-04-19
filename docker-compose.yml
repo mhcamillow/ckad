@@ -5,5 +5,15 @@ services:
       context: .
       dockerfile: Dockerfile
     image: mhcamillow/node:latest
+    environment:
+      - PORT=8080
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
     ports:
       - '80:8080'
+    volumes: 
+      - ./src:/usr/src/app/src
+    depends_on: 
+      - redis
+  redis:
+    image: redis:latest
