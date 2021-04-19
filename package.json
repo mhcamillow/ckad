@@ -1,0 +1,13 @@
+{
+    "name": "docker_node",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Marcelo Camillo <mhcamillo14@gmail.com>",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1"
+    }
+  }
